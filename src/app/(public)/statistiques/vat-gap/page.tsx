@@ -21,7 +21,7 @@ export default function StatistiquesVatGap() {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
           <div className="lg:col-span-2 bg-white p-6 rounded-2xl shadow-sm border border-neutral-200">
             <h2 className="text-xl font-bold text-primary-900 mb-6">Évolution de l'écart total de TVA (2017-2021)</h2>
-            <div className="h-80 w-full" aria-label="Graphique interactif montrant la baisse de l'écart total de TVA de 2017 à 2021">
+            <div className="h-[400px] min-h-[400px] w-full" aria-label="Graphique interactif montrant la baisse de l'écart total de TVA de 2017 à 2021">
               <ResponsiveContainer width="100%" height="100%">
                 <LineChart data={data} margin={{ top: 5, right: 20, bottom: 5, left: 0 }}>
                   <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#e5e5e5" />
