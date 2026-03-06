@@ -58,6 +58,16 @@ export default function Publications() {
                   <h2 className="text-xl font-bold text-primary-900 mb-2">{pub.titre}</h2>
                   {pub.auteur && <p className="text-neutral-700 font-medium mb-3">Auteur : {pub.auteur}</p>}
                   <p className="text-neutral-900">{pub.description}</p>
+                  {pub.url && (
+                    <a 
+                      href={pub.url} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="inline-block mt-4 text-primary-500 font-semibold hover:text-primary-700 hover:underline focus-ring rounded"
+                    >
+                      Voir la publication &rarr;
+                    </a>
+                  )}
                 </div>
               </div>
             ))

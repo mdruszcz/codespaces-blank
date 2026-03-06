@@ -47,6 +47,14 @@ export const mockDatabase = {
         "Effet de l'introduction des systèmes de caisses enregistreuses (GKS) dans le secteur Horeca.",
       type: "Working Paper",
     },
+    {
+      id: "inventaire-fossiles-2025",
+      titre: "Inventaire fédéral des subventions aux énergies fossiles 2025 - RÉSUMÉ",
+      date: "2025",
+      description: "Résumé de l'inventaire fédéral des subventions aux énergies fossiles.",
+      type: "Rapport Annuel",
+      url: "https://mdruszcz.github.io/inventaris/"
+    },
   ],
   vatGapData: [
     { annee: 2017, gap: 11.2 },
