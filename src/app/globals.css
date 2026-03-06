@@ -8,8 +8,19 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-open-sans);
+  --font-heading: var(--font-montserrat);
+
+  --color-primary-900: #003366;
+  --color-primary-700: #005288;
+  --color-primary-500: #288CFA;
+  
+  --color-neutral-900: #333333;
+  --color-neutral-500: #939399;
+  
+  --color-success-600: #2E865F;
+  --color-warning-500: #FFCE01;
+  --color-danger-600: #C8102E;
 }
 
 @media (prefers-color-scheme: dark) {
