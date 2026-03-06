@@ -239,7 +239,7 @@ VALUES
 ('Direct','Excise duties','Specific rates same product','Gasoil - utilisations industrielles','Gasoil - industrial and commercial uses',2018,386.3),
 ('Direct','Excise duties','Specific rates same product','Gasoil - utilisations industrielles','Gasoil - industrial and commercial uses',2019,415.6),
 ('Direct','Excise duties','Specific rates same product','Gasoil - utilisations industrielles','Gasoil - industrial and commercial uses',2020,383.7),
-('Direct','Excise duties','Specific rates same product','Gasoil - industrial and commercial uses',2021,375.0),
+('Direct','Excise duties','Specific rates same product','Gasoil - utilisations industrielles','Gasoil - industrial and commercial uses',2021,375.0),
 ('Direct','Excise duties','Specific rates same product','Gasoil - utilisations industrielles','Gasoil - industrial and commercial uses',2022,412.5),
 
 ('Direct','Excise duties','Specific rates same product','Remboursement diesel professionnel','Professional diesel reimbursement',2018,668.2),
