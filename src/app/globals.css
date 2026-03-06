@@ -9,18 +9,13 @@
 
 @layer base {
   body {
-    @apply text-foreground bg-background;
+    color: var(--foreground);
+    background-color: var(--background);
     font-family: var(--font-open-sans), sans-serif;
   }
   
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-montserrat), sans-serif;
-    @apply font-bold;
-  }
-}
-
-@layer utilities {
-  .focus-ring {
-    @apply focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2;
+    font-weight: bold;
   }
 }
