@@ -31,7 +31,7 @@ export default function Header() {
               onClick={toggleMenu}
               aria-expanded={isMenuOpen}
               aria-haspopup="true"
-              className="flex items-center space-x-2 text-slate-700 hover:text-blue-700 font-medium px-4 py-2 rounded focus:outline-none focus:ring-2 focus-visible:ring-primary-500"
+              className="flex items-center space-x-2 text-slate-700 hover:text-primary-700 font-medium px-4 py-2 rounded focus:outline-none focus:ring-2 focus-visible:ring-primary-500"
             >
               <span>Menu</span>
               <svg 
