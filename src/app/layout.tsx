@@ -19,6 +19,9 @@ export const metadata: Metadata = {
   description: "Portail web front-end du Service d'études (Studiedienst) du SPF Finances (Belgique)",
 };
 
+import Header from "@/components/layout/Header";
+import Footer from "@/components/layout/Footer";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -27,9 +30,13 @@ export default function RootLayout({
   return (
     <html lang="fr">
       <body
-        className={`${openSans.variable} ${montserrat.variable} font-sans antialiased`}
+        className={`${openSans.variable} ${montserrat.variable} font-sans antialiased min-h-screen flex flex-col`}
       >
-        {children}
+        <Header />
+        <main className="flex-grow">
+          {children}
+        </main>
+        <Footer />
       </body>
     </html>
   );
