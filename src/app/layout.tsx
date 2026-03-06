@@ -1,17 +1,19 @@
 import type { Metadata } from "next";
 import { Montserrat, Open_Sans } from "next/font/google";
+import Header from "@/components/layout/Header";
+import Footer from "@/components/layout/Footer";
 import "./globals.css";
 
 const montserrat = Montserrat({
-  variable: "--font-montserrat",
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
+  variable: "--font-montserrat",
+  display: "swap",
 });
 
 const openSans = Open_Sans({
-  variable: "--font-open-sans",
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
+  variable: "--font-open-sans",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -19,19 +21,14 @@ export const metadata: Metadata = {
   description: "Portail web front-end du Service d'études (Studiedienst) du SPF Finances (Belgique)",
 };
 
-import Header from "@/components/layout/Header";
-import Footer from "@/components/layout/Footer";
-
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="fr">
-      <body
-        className={`${openSans.variable} ${montserrat.variable} font-sans antialiased min-h-screen flex flex-col`}
-      >
+    <html lang="fr" className={`${montserrat.variable} ${openSans.variable}`}>
+      <body className="antialiased min-h-screen flex flex-col font-sans">
         <Header />
         <main className="flex-grow">
           {children}
