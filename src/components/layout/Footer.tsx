@@ -14,7 +14,7 @@ export default function Footer() {
               <li>
                 <Link 
                   href="/accessibilite" 
-                  className="hover:underline hover:text-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 rounded px-1"
+                  className="hover:underline hover:text-blue-700 focus:outline-none focus:ring-2 focus-visible:ring-primary-500 rounded px-1"
                 >
                   Déclaration d'accessibilité EAA
                 </Link>
@@ -22,7 +22,7 @@ export default function Footer() {
               <li>
                 <Link 
                   href="/cookies" 
-                  className="hover:underline hover:text-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 rounded px-1"
+                  className="hover:underline hover:text-blue-700 focus:outline-none focus:ring-2 focus-visible:ring-primary-500 rounded px-1"
                 >
                   Politique des cookies
                 </Link>

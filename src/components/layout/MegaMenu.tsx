@@ -80,7 +80,7 @@ export default function MegaMenu({ isOpen, onClose, triggerRef }: MegaMenuProps)
               onClose();
               triggerRef.current?.focus();
             }}
-            className="text-slate-500 hover:text-slate-800 p-2 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="text-slate-500 hover:text-slate-800 p-2 rounded focus:outline-none focus:ring-2 focus-visible:ring-primary-500"
             aria-label="Fermer le menu"
           >
             Fermer (Échap)
@@ -95,17 +95,17 @@ export default function MegaMenu({ isOpen, onClose, triggerRef }: MegaMenuProps)
             </h2>
             <ul className="space-y-3">
               <li>
-                <Link href="/organisation/missions" className="block text-slate-600 hover:text-blue-700 hover:underline focus:outline-none focus:ring-2 focus:ring-blue-500 rounded px-1 py-1">
+                <Link href="/organisation/missions" className="block text-slate-600 hover:text-blue-700 hover:underline focus:outline-none focus:ring-2 focus-visible:ring-primary-500 rounded px-1 py-1">
                   Missions et valeurs
                 </Link>
               </li>
               <li>
-                <Link href="/organisation/equipe" className="block text-slate-600 hover:text-blue-700 hover:underline focus:outline-none focus:ring-2 focus:ring-blue-500 rounded px-1 py-1">
+                <Link href="/organisation/equipe" className="block text-slate-600 hover:text-blue-700 hover:underline focus:outline-none focus:ring-2 focus-visible:ring-primary-500 rounded px-1 py-1">
                   L'équipe
                 </Link>
               </li>
               <li>
-                <Link href="/organisation/contact" className="block text-slate-600 hover:text-blue-700 hover:underline focus:outline-none focus:ring-2 focus:ring-blue-500 rounded px-1 py-1">
+                <Link href="/organisation/contact" className="block text-slate-600 hover:text-blue-700 hover:underline focus:outline-none focus:ring-2 focus-visible:ring-primary-500 rounded px-1 py-1">
                   Contact
                 </Link>
               </li>
@@ -119,12 +119,12 @@ export default function MegaMenu({ isOpen, onClose, triggerRef }: MegaMenuProps)
             </h2>
             <ul className="space-y-3">
               <li>
-                <Link href="/statistiques/vat-gap" className="block text-slate-600 hover:text-blue-700 hover:underline focus:outline-none focus:ring-2 focus:ring-blue-500 rounded px-1 py-1">
+                <Link href="/statistiques/vat-gap" className="block text-slate-600 hover:text-blue-700 hover:underline focus:outline-none focus:ring-2 focus-visible:ring-primary-500 rounded px-1 py-1">
                   VAT-gap (Écart de TVA)
                 </Link>
               </li>
               <li>
-                <Link href="/statistiques/open-data" className="block text-slate-600 hover:text-blue-700 hover:underline focus:outline-none focus:ring-2 focus:ring-blue-500 rounded px-1 py-1">
+                <Link href="/statistiques/open-data" className="block text-slate-600 hover:text-blue-700 hover:underline focus:outline-none focus:ring-2 focus-visible:ring-primary-500 rounded px-1 py-1">
                   Open Data
                 </Link>
               </li>
@@ -138,17 +138,17 @@ export default function MegaMenu({ isOpen, onClose, triggerRef }: MegaMenuProps)
             </h2>
             <ul className="space-y-3">
               <li>
-                <Link href="/publications/rapports" className="block text-slate-600 hover:text-blue-700 hover:underline focus:outline-none focus:ring-2 focus:ring-blue-500 rounded px-1 py-1">
+                <Link href="/publications/rapports" className="block text-slate-600 hover:text-blue-700 hover:underline focus:outline-none focus:ring-2 focus-visible:ring-primary-500 rounded px-1 py-1">
                   Rapports annuels
                 </Link>
               </li>
               <li>
-                <Link href="/publications/etudes" className="block text-slate-600 hover:text-blue-700 hover:underline focus:outline-none focus:ring-2 focus:ring-blue-500 rounded px-1 py-1">
+                <Link href="/publications/etudes" className="block text-slate-600 hover:text-blue-700 hover:underline focus:outline-none focus:ring-2 focus-visible:ring-primary-500 rounded px-1 py-1">
                   Études thématiques
                 </Link>
               </li>
               <li>
-                <Link href="/publications/articles" className="block text-slate-600 hover:text-blue-700 hover:underline focus:outline-none focus:ring-2 focus:ring-blue-500 rounded px-1 py-1">
+                <Link href="/publications/articles" className="block text-slate-600 hover:text-blue-700 hover:underline focus:outline-none focus:ring-2 focus-visible:ring-primary-500 rounded px-1 py-1">
                   Articles et notes brèves
                 </Link>
               </li>

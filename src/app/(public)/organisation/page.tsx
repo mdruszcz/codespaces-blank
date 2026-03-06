@@ -96,7 +96,7 @@ export default function OrganisationPage() {
               <div key={dir.id} className="border border-gray-200 rounded-lg overflow-hidden">
                 <button
                   onClick={() => toggleAccordion(dir.id)}
-                  className="w-full px-6 py-4 flex items-center justify-between bg-gray-50 hover:bg-gray-100 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full px-6 py-4 flex items-center justify-between bg-gray-50 hover:bg-gray-100 transition-colors focus:outline-none focus:ring-2 focus-visible:ring-primary-500"
                   aria-expanded={isOpen}
                   aria-controls={`sect-${dir.id}`}
                 >
