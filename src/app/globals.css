@@ -12,8 +12,14 @@
   --font-heading: var(--font-montserrat);
 
   --color-primary-900: #003366;
+  --color-primary-800: #004277;
   --color-primary-700: #005288;
+  --color-primary-600: #1470e0;
   --color-primary-500: #288CFA;
+  --color-primary-400: #54a5fc;
+  --color-primary-300: #80beff;
+  --color-primary-200: #abd8ff;
+  --color-primary-100: #d6efff;
   
   --color-neutral-900: #333333;
   --color-neutral-500: #939399;
