@@ -58,8 +58,9 @@ export default function PublicationsPage() {
             
             <div className="space-y-4">
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1">Type de document</label>
+                <label htmlFor="type-document" className="block text-sm font-medium text-gray-700 mb-1">Type de document</label>
                 <select
+                  id="type-document"
                   value={selectedType}
                   onChange={(e) => setSelectedType(e.target.value)}
                   className="w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm p-2 border"
@@ -69,8 +70,9 @@ export default function PublicationsPage() {
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1">Auteur</label>
+                <label htmlFor="auteur" className="block text-sm font-medium text-gray-700 mb-1">Auteur</label>
                 <select
+                  id="auteur"
                   value={selectedAuthor}
                   onChange={(e) => setSelectedAuthor(e.target.value)}
                   className="w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm p-2 border"
@@ -80,8 +82,9 @@ export default function PublicationsPage() {
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1">Classification JEL</label>
+                <label htmlFor="jel" className="block text-sm font-medium text-gray-700 mb-1">Classification JEL</label>
                 <select
+                  id="jel"
                   value={selectedJel}
                   onChange={(e) => setSelectedJel(e.target.value)}
                   className="w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm p-2 border"
@@ -107,10 +110,12 @@ export default function PublicationsPage() {
         {/* Main Content */}
         <div className="flex-1">
           <div className="mb-6 relative">
+            <label htmlFor="search-title" className="sr-only">Rechercher par titre</label>
             <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
               <Search className="h-5 w-5 text-gray-400" />
             </div>
             <input
+              id="search-title"
               type="text"
               placeholder="Rechercher par titre..."
               value={searchTerm}

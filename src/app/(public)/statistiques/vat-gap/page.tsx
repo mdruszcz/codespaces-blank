@@ -37,8 +37,11 @@ export default function VatGapPage() {
       </div>
 
       <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-200 mb-12">
-        <h2 className="text-xl font-semibold text-gray-900 mb-6">Évolution de l'écart de TVA (en % des recettes théoriques)</h2>
-        <div className="h-96 w-full">
+        <h2 className="text-xl font-semibold text-gray-900 mb-6" id="chart-heading">Évolution de l'écart de TVA (en % des recettes théoriques)</h2>
+        <div className="sr-only">
+          Graphique illustrant l'évolution de l'écart de TVA entre 2011 et 2021, montrant le déficit de conformité (Compliance Gap) et le déficit politique (Policy Gap) en pourcentage des recettes théoriques.
+        </div>
+        <div className="h-96 w-full" role="img" aria-labelledby="chart-heading">
           <ResponsiveContainer width="100%" height="100%">
             <AreaChart
               data={vatGapData}
