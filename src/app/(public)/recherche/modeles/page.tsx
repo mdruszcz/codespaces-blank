@@ -1,78 +1,39 @@
-import React from "react";
-import { Settings, BarChart2 } from "lucide-react";
+import { mockDatabase } from "@/data/mockDatabase";
+import { Calculator } from "lucide-react";
 
-const models = [
-  {
-    name: "AURORA",
-    description: "Modèle de simulation pour les prévisions de recettes de TVA.",
-    parameters: ["Taux de TVA par secteur", "Consommation des ménages", "Investissements"],
-    annualVolume: "45 exécutions/an",
-    color: "bg-blue-500",
-  },
-  {
-    name: "SIRE",
-    description: "Système Intégré de Recherche Économique pour l'impôt des sociétés.",
-    parameters: ["Bénéfices des entreprises", "Déductions fiscales", "Taux d'imposition"],
-    annualVolume: "120 exécutions/an",
-    color: "bg-green-500",
-  },
-  {
-    name: "MISis",
-    description: "Modèle d'Impôt sur le revenu des personnes physiques.",
-    parameters: ["Revenus salariaux", "Quotité exemptée", "Frais professionnels"],
-    annualVolume: "85 exécutions/an",
-    color: "bg-purple-500",
-  },
-];
+export default function ModelesMicrosimulation() {
+  const modeles = mockDatabase.modeles;
 
-export default function ModelsPage() {
   return (
-    <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      <div className="mb-12">
-        <h1 className="text-3xl font-bold text-gray-900">Modèles Économétriques</h1>
-        <p className="mt-2 text-gray-600">
-          Aperçu des modèles utilisés par le Service d'Études pour les prévisions et analyses.
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-12">
+      <section>
+        <h1 className="text-3xl md:text-5xl font-bold text-primary-900 mb-6">
+          Modèles de Microsimulation
+        </h1>
+        <p className="text-lg text-neutral-900 max-w-3xl leading-relaxed mb-12">
+          Le Service d'études exploite plusieurs modèles de microsimulation pour analyser l'impact 
+          des réformes fiscales et budgétaires. Voici nos principaux modèles et leur activité en 2025.
         </p>
-      </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {models.map((model, idx) => (
-          <div
-            key={idx}
-            className="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden hover:shadow-md transition-shadow flex flex-col h-full"
-          >
-            <div className={`h-2 ${model.color}`}></div>
-            <div className="p-6 flex-1 flex flex-col">
-              <h2 className="text-2xl font-bold text-gray-900 mb-2">{model.name}</h2>
-              <p className="text-gray-600 mb-6 flex-1">{model.description}</p>
-              
-              <div className="space-y-4">
-                <div>
-                  <h3 className="text-sm font-semibold text-gray-900 flex items-center mb-2">
-                    <Settings className="w-4 h-4 mr-2 text-gray-500" />
-                    Paramètres principaux
-                  </h3>
-                  <ul className="text-sm text-gray-600 space-y-1 pl-6 list-disc">
-                    {model.parameters.map((param, i) => (
-                      <li key={i}>{param}</li>
-                    ))}
-                  </ul>
+        <div className="space-y-8">
+          {modeles.map((modele) => (
+            <div key={modele.id} className="bg-white rounded-2xl shadow-sm border border-neutral-200 overflow-hidden hover:border-primary-500 transition-colors">
+              <div className="bg-primary-50 px-6 py-4 border-b border-neutral-200 flex items-center justify-between">
+                <div className="flex items-center space-x-3">
+                  <Calculator className="w-6 h-6 text-primary-700" />
+                  <h2 className="text-2xl font-bold text-primary-900">{modele.nom}</h2>
                 </div>
-                
-                <div className="pt-4 border-t border-gray-100">
-                  <h3 className="text-sm font-semibold text-gray-900 flex items-center mb-1">
-                    <BarChart2 className="w-4 h-4 mr-2 text-gray-500" />
-                    Volume annuel
-                  </h3>
-                  <p className="text-lg font-medium text-gray-900 pl-6 tabular-nums">
-                    {model.annualVolume}
-                  </p>
+                <div className="bg-primary-100 text-primary-900 font-bold px-4 py-2 rounded-full tabular-nums">
+                  {modele.simulations2025} simulations (2025)
                 </div>
               </div>
+              <div className="p-6">
+                <p className="text-neutral-900 text-lg leading-relaxed">{modele.description}</p>
+              </div>
             </div>
-          </div>
-        ))}
-      </div>
-    </main>
+          ))}
+        </div>
+      </section>
+    </div>
   );
 }
