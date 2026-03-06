@@ -63,7 +63,7 @@ export default function OrganisationPage() {
           <div>
             <h2 className="text-xl font-semibold text-gray-900 mb-2">Direction Générale</h2>
             <div className="flex items-center space-x-4 mt-4">
-              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 font-bold text-xl">
+              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center text-primary-600 font-bold text-xl">
                 DL
               </div>
               <div>

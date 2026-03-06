@@ -131,7 +131,7 @@ export default function PublicationsPage() {
                   <li key={pub.id} className="p-6 hover:bg-gray-50 transition-colors">
                     <div className="flex items-start justify-between">
                       <div className="flex-1">
-                        <h3 className="text-lg font-semibold text-blue-600 mb-1">{pub.title}</h3>
+                        <h3 className="text-lg font-semibold text-primary-600 mb-1">{pub.title}</h3>
                         <div className="flex flex-wrap items-center gap-4 text-sm text-gray-500 mt-2">
                           <span className="flex items-center"><FileText className="w-4 h-4 mr-1" /> {pub.type}</span>
                           <span className="flex items-center"><User className="w-4 h-4 mr-1" /> {pub.author}</span>
